@@ -347,8 +347,6 @@
               <strong>" + data[row][0] + "</strong>\
               <br />\
               " + data[row][1] + "\
-              <br />\
-              " + data[row][2] + "\
             </div>\
           </div>";
         results.append(template);
