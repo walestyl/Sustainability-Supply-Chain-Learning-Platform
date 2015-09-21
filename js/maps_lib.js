@@ -9,7 +9,7 @@
         this.searchRadius = options.searchRadius || 1000000000000000000000000000; //in meters ~ 1/2 mile
 
         // the encrypted Table ID of your Fusion Table (found under File => About)
-        this.fusionTableId = options.fusionTableId || "1-P8u-cmqPSvhdlTRHTvLz7cjGiffSQzgZuTi-86F",
+        this.fusionTableId = options.fusionTableId || "1wkhCfOXXg8vJDpyVfj2aTCRv9_uUubrSijSvR5Z1",
 
         // Found at https://console.developers.google.com/
         // Important! this key is for demonstration purposes. please register your own.
@@ -18,7 +18,7 @@
         // name of the location column in your Fusion Table.
         // NOTE: if your location column name has spaces in it, surround it with single quotes
         // example: locationColumn:     "'my location'",
-        this.locationColumn = options.locationColumn || "'Study Location'";
+        this.locationColumn = options.locationColumn || "'Location'";
         
         // appends to all address searches if not present
         this.locationScope = options.locationScope || "";
@@ -316,7 +316,7 @@
 
      MapsLib.prototype.getList = function(whereClause) {
     var self = this;
-    var selectColumns = 'Certification, Scope';
+    var selectColumns = 'Study, Description';
 
     self.query({ 
       select: selectColumns, 
@@ -349,8 +349,6 @@
               " + data[row][1] + "\
               <br />\
               " + data[row][2] + "\
-              <br />\
-              " + data[row][3] + "\
             </div>\
           </div>";
         results.append(template);
