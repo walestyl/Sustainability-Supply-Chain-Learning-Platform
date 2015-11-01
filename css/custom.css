@@ -27,7 +27,7 @@ a:hover { color: #4B58A6; }
 
 canvas {-ms-touch-action: double-tap-zoom;}
 
-div#results_list {
+div #results_list {
  max-height: 350px;
  overflow: scroll;
 }
