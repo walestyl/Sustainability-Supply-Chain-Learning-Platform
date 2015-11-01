@@ -27,6 +27,11 @@ a:hover { color: #4B58A6; }
 
 canvas {-ms-touch-action: double-tap-zoom;}
 
+div#results_list {
+ max-height: 350px;
+ overflow: scroll;
+}
+
 /* customizations for iframe template */
 .iframe #map_canvas { height: 500px; }
 .iframe .well { margin-bottom: 5px; }
