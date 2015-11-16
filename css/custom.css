@@ -33,7 +33,7 @@ div #results_list {
 }
 
 /* customizations for iframe template */
-.iframe #map_canvas { height: 300px; }
+.iframe #map_canvas { height: 450px; }
 .iframe .well { margin-bottom: 5px; }
 .iframe .alert { margin-top: 5px; }
 
